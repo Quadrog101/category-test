@@ -1,0 +1,134 @@
+img {
+    display: block;
+    margin: 0 auto;
+}
+.container{
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 153px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 100px;
+}
+.category{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.category__label{
+    margin-bottom: 80px;
+    position: relative;
+    color: var(--rgba-3223201, #201714);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Impact;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.category__label::after{
+    margin-top: 8px;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 88px;
+    height: 4px;
+    background-color: #FFCC01;
+    border-radius: 99px;
+}
+.leaf-a{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: -7;
+}
+.leaf-b{
+    position: absolute;
+    z-index: -7;
+    bottom: 50px;
+    right: 560px;
+}
+
+.decor-dots{
+    position: absolute;
+    top: 500px;
+    left: 0;
+}
+.decor{
+    position: absolute;
+    top: 0;
+    right: 580px;
+    z-index: 2;
+}
+.decor-circle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -7;
+}
+
+.category__cards{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.card{
+    overflow: hidden;
+    flex: 1 1 0;
+    max-width: 376px;
+    height: 188px;
+    border-radius: 16px;
+    position: relative;
+    border: 2px solid var(--rgba-12120001, #79C800);
+    background: rgba(255, 255, 255, 0.30);
+    /* тень */
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+}
+.card__img img{
+    margin-right: 0;
+}
+.card__img-selected img{
+    display: none;
+}
+.card.active .card__img-selected img {
+    display: block;
+}
+.card.active .card__img-basic img {
+    display: none;
+}
+
+.card__name{
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    color: var(--rgba-3223201, #201714);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+
+.card.active .card__name{
+    font-size: 28px;
+    line-height: 85.607%;
+}
+.active{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(121, 200, 0, 0.40);
+}
+
+.card svg  {
+    display: none;
+    max-width: none;
+}
+
+.card.active svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -5;
+}

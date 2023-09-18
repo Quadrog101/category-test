@@ -1,0 +1,157 @@
+@media (max-width: 1600px) {
+    .leaf-a img {
+        width: 65%;
+    }
+    .leaf-b img {
+        width: 75%;
+    }
+    .leaf-a{
+        left: -45px;
+    }
+    .leaf-b {
+        bottom: 70px;
+        right: 450px;
+    }
+    .category__label {
+        font-size: 30px;
+    }
+    .container {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 130px;
+    }
+    .card__name {
+        font-size: 20px;
+    }
+    .card.active .card__name{
+        font-size: 22px;
+        line-height: 85.607%;
+    }
+    .card__img img{
+        width: 70%;
+    }
+    .card {
+        height: 160px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .leaf-a img {
+        width: 55%;
+    }
+    .card__img img{
+        width: 68%;
+    }
+    .decor img{
+        width: 70%;
+    }
+    .decor-dots img{
+        width: 70%;
+    }
+    .decor-dots{
+        left: -30px;
+        top: 400px;
+    }
+    .decor{
+        right: 338px;
+    }
+    .container{
+        padding-top: 90px;
+    }
+    .card{
+        height: 124px;
+    }
+    .card__name{
+        font-size: 16px;
+    }
+    .category__label{
+        font-size: 25px;
+    }
+    .card.active .card__name {
+        font-size: 18px;
+        line-height: 85.607%;
+    }
+}
+
+@media (max-width: 912px) {
+    .leaf-a img {
+        width: 45%;
+    }
+    .leaf-b img {
+        width: 55%;
+    }
+    .leaf-b {
+        bottom: 80px;
+        right: 237px;
+    }
+    .leaf-a {
+        left: -60px;
+        top: 60px;
+    }
+    .decor-circle{
+        top: 100px;
+    }
+    .decor-dots{
+        top: 700px;
+    }
+    .container{
+        padding-left: 50px;
+        padding-right: 70px;
+        padding-top: 50px;
+    }
+    .card{
+        flex: none;
+        height: 95px;
+    }
+    .category__cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card__name{
+        font-size: 16px;
+    }
+    .category__label{
+        font-size: 25px;
+        margin-bottom: 150px;
+    }
+    .card.active .card__name {
+        font-size: 18px;
+        line-height: 85.607%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 46px;
+    }
+    .card{
+        height: 134px;
+        flex: none;
+        width: 100%;
+    }
+    .card__img img{
+        width: 60%;
+    }
+    .category__cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .category__label{
+        margin-bottom: 40px;
+    }
+    .decor-dots{
+        top: 824px;
+    }
+    .decor{
+        display: none;
+    }
+    .leaf-a{
+        top: 100px;
+    }
+    .leaf-b{
+        bottom: 82px;
+        right: 80px;
+    }
+}
